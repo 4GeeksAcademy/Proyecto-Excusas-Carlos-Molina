@@ -1,9 +1,7 @@
-/* eslint-disable */
 import "bootstrap";
 import "./style.css";
 
 window.onload = function() {
-  //write your code here;
 
   const personas = [
     "Mi perro",
@@ -44,11 +42,13 @@ window.onload = function() {
     return `${persona} ${accion} ${objecto} ${tiempo}.`;
   }
 
+  // Botón para generar excusa //
   function mostrarExcusa() {
     const excusaX = generarExcusa();
     document.getElementById("excusa").innerText = excusaX;
   }
 
+  //Acción del botón //
   document
     .getElementById("generateButton")
     .addEventListener("click", mostrarExcusa);
